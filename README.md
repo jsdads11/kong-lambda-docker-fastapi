@@ -173,6 +173,16 @@ ej-eiapmm-dev Control Plane
   - kong-lambda-docker-fastapi-svc
 - Routes
   - kong-lambda-docker-fastapi-rte # kong-lambda-docker-fastapi
+- Lambda Plug-in on Route
+  - Aws Assume Role Arn =
+      - WAS FAST15: arn:aws:iam::129269632956:role/service-role/Kong-FastAPI5-role-y71mime5
+      - NOW 
+  - Aws Imds Protocol Version = v2
+  - Awsgateway Compatible Payload Version = 1.0
+  - Aws Role Session Name = kong
+  - Function Name = 
+
+
 
 
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/kong-svc.jpg?raw=true)
