@@ -182,6 +182,9 @@ ej-eiapmm-dev Control Plane
   - Aws Role Session Name = kong
   - Function Name = 
 
+## CLONE ME for above (check rile type upon creation AWS service or 3rd parties etc)
+find AWS IAM ROLES Kong-FastAPI5-role-y71mime5
+# CLONE ME
 
 
 
@@ -192,3 +195,10 @@ ej-eiapmm-dev Control Plane
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/kong-lambda-plugin.jpg?raw=true)
 
 # kong-lambda-docker-fastapi
+
+## to test
+run via kong service endpoint 
+
+### ??? - check with Chirang
+
+curl http kong-lambda-docker-fastapi-svc
