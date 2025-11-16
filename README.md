@@ -176,6 +176,7 @@ ej-eiapmm-dev Control Plane
 
 
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/kong-svc.jpg?raw=true)
+
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/kong-rte.jpg?raw=true)
 
 
