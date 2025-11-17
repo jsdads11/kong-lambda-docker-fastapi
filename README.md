@@ -174,17 +174,14 @@ ej-eiapmm-dev Control Plane
   - kong-lambda-docker-fastapi-rte # kong-lambda-docker-fastapi
 - Lambda Plug-in on Route
   - Aws Assume Role Arn =
-      - <span style="color: #985203ff"> WAS: FAST15: arn:aws:iam::129269632956:role/service-role/Kong-FastAPI5-role-y71mime5 </span>
-      - <span style="color: #037910ff"> NOW </span>
+      - <span style="color:darkred;  font-weight:bold;"> WAS: **FAST15**: </span> <span style="color:darkred;font-weight:normal;">arn:aws:iam::129269632956:role/service-role/Kong-FastAPI5-role-y71mime5 </span>
+
+      - <span style="color:darkgreen;font-weight:bold;"> NOW:</span> <span style="color:darkgreen;font-weight:normal;"> .... TBC </span>
+
   - Aws Imds Protocol Version = v2
   - Awsgateway Compatible Payload Version = 1.0
   - Aws Role Session Name = kong
-  - Function Name = 
-
-## CLONE ME for above (check role type upon creation AWS service or 3rd parties etc)
-find AWS IAM ROLES Kong-FastAPI5-role-y71mime5
-# CLONE ME
-
+  - Function Name = ??
 
 
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/kong-svc.jpg?raw=true)
