@@ -217,11 +217,11 @@ Kong Plug In Lambda details
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/LambdaPolicyAssumeRoles.jpg?raw=true)
 
 ---
-#### elasltic-kong-access-log-search.jpg
+#### elastic kong access log search.jpg
 
-elasltic kong-access log search
+elastic kong-access log search
 
-![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/plug-in-aws-lambda.jpg?raw=true)
+![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/elastic-kong-access-log-search.jpg?raw=true)
 
 ---
 #### Lambda polciy
