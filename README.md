@@ -203,6 +203,13 @@ run via kong service endpoint
 https://api-dev.test.easyjet.com/main
 ````
 
+#### Lambda kong-lambda-docker-fastapi-summary
+
+Kong Plug In Lambda details
+
+![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/aws-kong-lambda-docker-fastapi-summary.jpg?raw=true)
+
+
 #### Lambda Plugin Kong Route 
 
 Kong Plug In Lambda details
