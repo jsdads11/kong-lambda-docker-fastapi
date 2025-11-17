@@ -210,9 +210,9 @@ Kong Plug In Lambda details
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/aws-kong-lambda-docker-fastapi-summary.jpg?raw=true)
 
 ---
-#### Lambda Plugin Kong Route 
+#### Lambda Role Policy Accesses 
 
-Kong Plug In Lambda details
+AWS Service Kong Role Policy Accesses 
 
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/LambdaPolicyAssumeRoles.jpg?raw=true)
 
