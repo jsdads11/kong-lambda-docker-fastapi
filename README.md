@@ -193,12 +193,10 @@ find AWS IAM ROLES Kong-FastAPI5-role-y71mime5
 
 ![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/kong-lambda-plugin.jpg?raw=true)
 
+---
+
 # kong-lambda-docker-fastapi
 
-## to test
-run via kong service endpoint 
-
-### ??? - check with Chirang
 ````
 https://api-dev.test.easyjet.com/main
 ````
@@ -225,7 +223,7 @@ elastic kong-access log search
 
 ---
 #### Lambda polciy
-IAM Roles APIM-DEV-EKS-NODEGROUP-ROLE
+**IAM Roles APIM-DEV-EKS-NODEGROUP-ROLE**
 
 Lambda Modify permissions in LambdaPolicyAssumeRoles
 
