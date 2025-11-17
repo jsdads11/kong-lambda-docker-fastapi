@@ -137,7 +137,8 @@ aws iam create-role --role-name lambda-ex --assume-role-policy-document '{
     }
 }
 ````
-// creat lambda function kong-lambda-docker-fastapi
+// create lambda function kong-lambda-docker-fastapi
+// <span style="color: #985203ff"> Need to refresh credentials aws config </span>
 ````
 aws lambda create-function --function-name kong-lambda-docker-fastapi --package-type Image --code ImageUri=129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi:latest --role arn:aws:iam::129269632956:role/lambda-ex --region eu-west-1
 ````
@@ -153,13 +154,11 @@ output. ( >> response.json file)
 }
 (END)
 ````
-
+<br>
 curl "http://localhost:9001/2015-03-31/functions/function/invocations" -d '{}'
 
-<span style="color: #179803ff; font-family: Babas; font-size: 1.1em;">
-
+<span style="color: #179803ff; font-family: Babas; font-size: 1.1em;"><br> 
 "Hello from AWS Lambda using Python3.12.12 (main, Nov  3 2025, 10:02:13) [GCC 11.5.0 20240719 (Red Hat 11.5.0-5)]!"%
-
 <span>
 
 ---
@@ -175,14 +174,14 @@ ej-eiapmm-dev Control Plane
   - kong-lambda-docker-fastapi-rte # kong-lambda-docker-fastapi
 - Lambda Plug-in on Route
   - Aws Assume Role Arn =
-      - WAS FAST15: arn:aws:iam::129269632956:role/service-role/Kong-FastAPI5-role-y71mime5
-      - NOW 
+      - <span style="color: #985203ff"> WAS: FAST15: arn:aws:iam::129269632956:role/service-role/Kong-FastAPI5-role-y71mime5 </span>
+      - <span style="color: #037910ff"> NOW </span>
   - Aws Imds Protocol Version = v2
   - Awsgateway Compatible Payload Version = 1.0
   - Aws Role Session Name = kong
   - Function Name = 
 
-## CLONE ME for above (check rile type upon creation AWS service or 3rd parties etc)
+## CLONE ME for above (check role type upon creation AWS service or 3rd parties etc)
 find AWS IAM ROLES Kong-FastAPI5-role-y71mime5
 # CLONE ME
 
@@ -200,5 +199,18 @@ find AWS IAM ROLES Kong-FastAPI5-role-y71mime5
 run via kong service endpoint 
 
 ### ??? - check with Chirang
+````
+https://api-dev.test.easyjet.com/main
+````
+---
+#### 
+AWS_EKS-Cluster-apim-dev
 
-curl http kong-lambda-docker-fastapi-svc
+apim-dev-kong-comm-gateway-kong/
+
+Controlled by 
+ReplicaSet/apim-dev-kongg-commm-gateway-kong-85795555fcd-44kw
+IP=10.117.72.81
+app=apim-dev-kong-comm-gateway-kong
+
+![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/AWS_EKS-Cluster-apim-dev.jpg?raw=true)
