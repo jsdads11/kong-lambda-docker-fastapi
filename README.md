@@ -202,7 +202,16 @@ run via kong service endpoint
 ````
 https://api-dev.test.easyjet.com/main
 ````
+#### Lambda polciy
+IAM Roles APIM-DEV-EKS-NODEGROUP-ROLE
+
+Lambda Modify permissions in LambdaPolicyAssumeRoles
+
+![alt text](https://github.com/jsdads11/kong-lambda-docker-fastapi/blob/main/images/LambdaPolicyAssumeRoles.jpg?raw=true)
+
+
 ---
+
 #### 
 AWS_EKS-Cluster-apim-dev
 
