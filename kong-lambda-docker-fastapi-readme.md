@@ -301,3 +301,4 @@ aws lambda update-function-code \
   --function-name kong-lambda-docker-fastapi \
   --image-uri 129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi:latest
 ```
+![alt text](../kong-lambda-docker-fastapi/images/process-flow-chart.png)
