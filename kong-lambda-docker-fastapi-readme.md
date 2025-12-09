@@ -33,11 +33,14 @@ docker buildx build --platform linux/amd64 --provenance=false -t docker-image:fa
 ### Run Container Locally
 
 ```bash
-# docker run --platform linux/amd64 -p 9001:8080 docker-image:fastapi
-
-docker run --platform linux/amd64 -d -p 9001:8080 docker-image:test lambda_function.handler
-
+# // docker run --platform linux/amd64 -d -p 9001:8080 docker-image:test lambda_function.handler
+docker run --platform linux/amd64 -p 9001:8080 docker-image:fastapi lambda_function.handler
 ```
+
+<span style='font-size: 10px;font-family: monospace, Consolar, DejaVu Sans Mono, Lucida Console, Courier, "Courier New";'>docker run --platform linux/amd64 -p 9001:8080 docker-image:fastapi lambda_function.handler
+09 Dec 2025 21:13:15,980 [INFO] (rapid) exec '/var/runtime/bootstrap' (cwd=/var/task, handler=)</span>
+
+<span style='font-size: 12px; color: green; font-family: monospace, Consolar, DejaVu Sans Mono, Lucida Console, Courier, "Courier New";'>DOCKER LOG: 09 Dec 2025 21:29:23,628 [INFO] (rapid) exec '/var/runtime/bootstrap' (cwd=/var/task, handler=)</span>
 
 Port mapping: `HOST_PORT:CONTAINER_PORT` → `9001:8080`
 
@@ -48,9 +51,11 @@ Once the container is running on port 9001, test with:
 ```bash
 # Basic invocation
 curl "http://localhost:9001/2015-03-31/functions/function/invocations" -d '{}'
+```
 
+```bash
 # With payload
-curl "http://localhost:9001/2015-03-31/functions/function/invocations" -d '{"payload":"hello world!"}'
+curl "http://localhost:9001/2015-03-31/functions/function/invocations" -d '{"payload":"hello Tony world!"}'
 ```
 
 **Expected Response:**
