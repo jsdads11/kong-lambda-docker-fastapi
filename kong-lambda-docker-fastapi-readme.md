@@ -116,11 +116,25 @@ aws ecr describe-repositories --repository-names kong-lambda-docker-fastapi
 
 ```bash
 # Tag the image
-docker tag docker-image:test 129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi:latest
+docker tag docker-image:fastapi 129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi:latest
 
 # Push to ECR
 docker push 129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi:latest
 ```
+
+onyodonnell@Tonys-MacBook-Pro-2 Kong-Lambda-Docker-FastAPI % docker push 129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi:latest
+The push refers to repository [129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi]
+4348d3342ecf: Pushed 
+9b21889975c3: Pushed 
+17a598296246: Pushed 
+d9dc62378ebc: Pushing [====>                                              ]  13.63MB/146.1MB
+fba96b1ad933: Pushing [===========================>                       ]  19.92MB/36.86MB
+9f1343d9f789: Pushing [==============================>                    ]  6.291MB/10.16MB
+4f4fb700ef54: Layer already exists 
+99fbe4cf46bd: Pushed 
+17e472487fbd: Pushed 
+78ffe3fc4d71: Pushed 
+ee9fd57969cb: Pushed 
 
 ### Step 5: Create IAM Role for Lambda
 

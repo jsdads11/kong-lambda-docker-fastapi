@@ -1,0 +1,143 @@
+<svg viewBox="0 0 800 2200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="prefix__b" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path fill="#333" d="M0 0l10 3L0 6z" />
+        </marker>
+        <filter id="prefix__a" />
+    </defs>
+    <ellipse cx="400" cy="30" rx="150" ry="25" fill="#e1f5ff" stroke="#06c" stroke-width="2" filter="url(#prefix__a)" />
+    <text x="400" y="36" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">FastAPI Lambda
+        Deployment</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 55v30" />
+    <rect x="300" y="90" width="200" height="40" rx="5" fill="#f0f8ff" stroke="#06c" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="115" text-anchor="middle" font-family="Arial" font-size="14"
+        font-weight="bold">Local Development</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 130v30" />
+    <rect x="280" y="165" width="240" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Build Docker Image</text><text x="400" y="205" text-anchor="middle" font-family="Arial"
+        font-size="11">docker buildx build</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 215v30" />
+    <rect x="280" y="250" width="240" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="270" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Run Container Locally</text><text x="400" y="290" text-anchor="middle" font-family="Arial"
+        font-size="11">Port 9001:8080</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 300v30" />
+    <path d="M400 335l80 45-80 45-80-45z" fill="#e7f3ff" stroke="#06c" stroke-width="2" filter="url(#prefix__a)" /><text
+        x="400" y="375" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Test
+        Locally</text><text x="400" y="395" text-anchor="middle" font-family="Arial" font-size="11">curl
+        invocations</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 425v40" /><text x="420" y="450"
+        font-family="Arial" font-size="11" fill="#080">Success</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M320 380H180" /><text x="240" y="370"
+        font-family="Arial" font-size="11" fill="#c00">Failed</text>
+    <rect x="80" y="355" width="200" height="50" rx="5" fill="#fff3cd" stroke="#ffc107" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="180" y="385" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Debug Application</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" stroke-dasharray="5 5" d="M180 355l100-165" />
+    <rect x="280" y="470" width="240" height="50" rx="5" fill="#f0f8ff" stroke="#06c" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="490" text-anchor="middle" font-family="Arial" font-size="14"
+        font-weight="bold">AWS Deployment Setup</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 520v30" />
+    <rect x="280" y="555" width="240" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="575" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Configure AWS CLI</text><text x="400" y="595" text-anchor="middle" font-family="Arial"
+        font-size="11">aws configure</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 605v30" />
+    <rect x="280" y="640" width="240" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="660" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Authenticate with ECR</text><text x="400" y="680" text-anchor="middle" font-family="Arial"
+        font-size="11">get-login-password</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 690v30" />
+    <rect x="260" y="725" width="280" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="745" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Create ECR Repository</text><text x="400" y="765" text-anchor="middle" font-family="Arial"
+        font-size="11">kong-lambda-docker-fastapi</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 775v30" />
+    <rect x="280" y="810" width="240" height="40" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="835" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Tag Docker Image</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 850v30" />
+    <rect x="280" y="885" width="240" height="40" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="910" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Push Image to ECR</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 925v30" />
+    <path d="M400 960l80 40-80 40-80-40z" fill="#e7f3ff" stroke="#06c" stroke-width="2" filter="url(#prefix__a)" /><text
+        x="400" y="995" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">IAM Role</text><text
+        x="400" y="1015" text-anchor="middle" font-family="Arial" font-size="11">Exists?</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M320 1000H180" /><text x="240" y="990"
+        font-family="Arial" font-size="11">No</text>
+    <rect x="60" y="975" width="240" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="180" y="995" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Create lambda-ex Role</text><text x="180" y="1015" text-anchor="middle" font-family="Arial"
+        font-size="11">aws iam create-role</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M180 1025l140 75M400 1040v30" /><text x="420"
+        y="1060" font-family="Arial" font-size="11">Yes</text>
+    <rect x="260" y="1075" width="280" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="1095" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Create Lambda Function</text><text x="400" y="1115" text-anchor="middle" font-family="Arial"
+        font-size="11">--package-type Image</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1125v30" />
+    <rect x="260" y="1160" width="280" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="1180" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Test Lambda Invocation</text><text x="400" y="1200" text-anchor="middle" font-family="Arial"
+        font-size="11">aws lambda invoke</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1210v30" />
+    <path d="M400 1245l80 45-80 45-80-45z" fill="#e7f3ff" stroke="#06c" stroke-width="2" filter="url(#prefix__a)" />
+    <text x="400" y="1285" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Lambda</text><text
+        x="400" y="1305" text-anchor="middle" font-family="Arial" font-size="11">Works?</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M480 1290h140" /><text x="530" y="1280"
+        font-family="Arial" font-size="11" fill="#c00">Failed</text>
+    <rect x="540" y="1245" width="200" height="90" rx="5" fill="#fff3cd" stroke="#ffc107" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="640" y="1270" text-anchor="middle" font-family="Arial" font-size="12"
+        font-weight="bold">Check CloudWatch</text><text x="640" y="1290" text-anchor="middle" font-family="Arial"
+        font-size="12" font-weight="bold">Logs</text><text x="640" y="1310" text-anchor="middle" font-family="Arial"
+        font-size="11">Verify IAM</text><text x="640" y="1325" text-anchor="middle" font-family="Arial"
+        font-size="11">Permissions</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" stroke-dasharray="5 5" d="M640 1245l-100-145" />
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1335v40" /><text x="420" y="1360"
+        font-family="Arial" font-size="11" fill="#080">Success</text>
+    <rect x="280" y="1380" width="240" height="50" rx="5" fill="#f0f8ff" stroke="#06c" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="1410" text-anchor="middle" font-family="Arial" font-size="14"
+        font-weight="bold">Kong Gateway Setup</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1430v30" />
+    <rect x="240" y="1465" width="320" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="1485" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Create Gateway Service</text><text x="400" y="1505" text-anchor="middle" font-family="Arial"
+        font-size="11">kong-lambda-docker-fastapi-svc</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1515v30" />
+    <rect x="240" y="1550" width="320" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="1570" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Create Route</text><text x="400" y="1590" text-anchor="middle" font-family="Arial"
+        font-size="11">kong-lambda-docker-fastapi-rte</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1600v30" />
+    <rect x="240" y="1635" width="320" height="90" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="1655" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Configure Lambda Plugin</text><text x="400" y="1675" text-anchor="middle" font-family="Arial"
+        font-size="11">- Assume Role ARN</text><text x="400" y="1693" text-anchor="middle" font-family="Arial"
+        font-size="11">- IMDS Protocol v2</text><text x="400" y="1711" text-anchor="middle" font-family="Arial"
+        font-size="11">- Session Name</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1725v30" />
+    <rect x="240" y="1760" width="320" height="50" rx="5" fill="#fff" stroke="#666" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="1780" text-anchor="middle" font-family="Arial" font-size="13"
+        font-weight="bold">Test via Kong Gateway</text><text x="400" y="1800" text-anchor="middle" font-family="Arial"
+        font-size="11">api-dev.test.easyjet.com</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1810v30" />
+    <path d="M400 1845l80 45-80 45-80-45z" fill="#e7f3ff" stroke="#06c" stroke-width="2" filter="url(#prefix__a)" />
+    <text x="400" y="1885" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold">Check
+        Elastic</text><text x="400" y="1905" text-anchor="middle" font-family="Arial" font-size="11">Access Logs</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M320 1890H180" /><text x="240" y="1880"
+        font-family="Arial" font-size="11" fill="#c00">Failed</text>
+    <rect x="50" y="1845" width="260" height="90" rx="5" fill="#fff3cd" stroke="#ffc107" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="180" y="1870" text-anchor="middle" font-family="Arial" font-size="12"
+        font-weight="bold">Debug Kong Config</text><text x="180" y="1890" text-anchor="middle" font-family="Arial"
+        font-size="11">Verify Role ARN</text><text x="180" y="1908" text-anchor="middle" font-family="Arial"
+        font-size="11">Check Plugin</text><text x="180" y="1925" text-anchor="middle" font-family="Arial"
+        font-size="11">Settings</text>
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" stroke-dasharray="5 5" d="M180 1845l60-165" />
+    <path stroke="#333" stroke-width="2" marker-end="url(#prefix__b)" d="M400 1935v40" /><text x="420" y="1960"
+        font-family="Arial" font-size="11" fill="#080">Success</text>
+    <ellipse cx="400" cy="2000" rx="150" ry="25" fill="#d4edda" stroke="#28a745" stroke-width="2"
+        filter="url(#prefix__a)" /><text x="400" y="2006" text-anchor="middle" font-family="Arial" font-size="14"
+        font-weight="bold">Deployment Complete!</text>
+</svg>
