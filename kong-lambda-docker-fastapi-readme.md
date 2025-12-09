@@ -33,7 +33,10 @@ docker buildx build --platform linux/amd64 --provenance=false -t docker-image:fa
 ### Run Container Locally
 
 ```bash
-docker run --platform linux/amd64 -p 9001:8080 docker-image:fastapi
+# docker run --platform linux/amd64 -p 9001:8080 docker-image:fastapi
+
+docker run --platform linux/amd64 -d -p 9001:8080 docker-image:test lambda_function.handler
+
 ```
 
 Port mapping: `HOST_PORT:CONTAINER_PORT` → `9001:8080`
