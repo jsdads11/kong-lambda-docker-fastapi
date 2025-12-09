@@ -5,7 +5,7 @@
 
 cd /Users/tonyodonnell/Kong-Lambda-Docker-FastAPI
 
-Local run of container
+Local run of container - build fastapi image (fasta, mangum, uvicorn)
 ````
 docker buildx build --platform linux/amd64 --provenance=false -t docker-image:fastapi .
 ````
@@ -14,7 +14,10 @@ docker run --platform linux/amd64 -p 9001:8080 docker-image:fastapi
 ````
 port mapping  HOST_PORT:CONTAINER_PORT <9001:8080>
 
+what is running below ?
+````
 docker run --platform linux/amd64 -d -p 9001:8080 docker-image:test lambda_function.handler
+````
 
 curl http://localhost:9001/lamdbda_function 
 
