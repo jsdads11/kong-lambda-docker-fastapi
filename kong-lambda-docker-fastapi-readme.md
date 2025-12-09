@@ -67,6 +67,15 @@ Hello from AWS Lambda using Python3.12.12 (main, Nov  3 2025, 10:02:13) [GCC 11.
 
 ## Part 2: AWS Deployment
 
+
+> **Important:** Refresh AWS credentials before running this command
+> AWS Account
+> Copy and paste the following text in your AWS credentials file (~/.aws/credentials)
+> [129269632956_EasyJet-App-PowerUser]
+aws_access_key_id=xxxxxxxxxxxxxx
+aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+aws_session_token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx==
+
 ### Step 1: Configure AWS Credentials
 
 ```bash
@@ -78,8 +87,12 @@ aws configure
 ```bash
 aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 129269632956.dkr.ecr.eu-west-1.amazonaws.com
 ```
+<span style='font-size: 10px;font-family: monospace, Consolar, DejaVu Sans Mono, Lucida Console, Courier, "Courier New";'>Login Succeeded</span>
+
 
 ### Step 3: Create ECR Repository
+
+Create Repository 
 
 ```bash
 aws ecr create-repository \
@@ -93,6 +106,11 @@ aws ecr create-repository \
 - **Repository URI:** `129269632956.dkr.ecr.eu-west-1.amazonaws.com/kong-lambda-docker-fastapi`
 - **ARN:** `arn:aws:ecr:eu-west-1:129269632956:repository/kong-lambda-docker-fastapi`
 - **Region:** eu-west-1
+
+if already created, use get repo details command
+```bash
+aws ecr describe-repositories --repository-names kong-lambda-docker-fastapi
+````
 
 ### Step 4: Tag and Push Image to ECR
 
@@ -129,8 +147,6 @@ aws iam create-role --role-name lambda-ex --assume-role-policy-document '{
 - **Role ID:** AROAR4GISB66LKLCITVVL
 
 ### Step 6: Create Lambda Function
-
-> **Important:** Refresh AWS credentials before running this command
 
 ```bash
 aws lambda create-function \
